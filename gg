@@ -8,7 +8,7 @@ Telegram-Calls = select, MyServer, DIRECT
 
 [Rule]
 # -----------------------------------
-# Подтверждённые IP-блоки серверов Telegram для звонков
+# Подтверждённые IP-блоки серверов Telegram для звонковая
 # -----------------------------------
 # IP-CIDR,A.B.C.D/32,Telegram-Calls,no-resolve
 # test blys
