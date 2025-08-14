@@ -11,3 +11,4 @@ Telegram-Calls = select, MyServer, DIRECT
 # Подтверждённые IP-блоки серверов Telegram для звонков
 # -----------------------------------
 # IP-CIDR,A.B.C.D/32,Telegram-Calls,no-resolve
+# test blys
