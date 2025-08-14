@@ -9,7 +9,6 @@ Telegram-Calls = select, MyServer, DIRECT
 # -----------------------------------
 # Подтверждённые IP-блоки серверов Telegram для звонков
 # -----------------------------------
-IP-CIDR,91.108.0.0/16,Telegram-Calls,no-resolve
 IP-CIDR,149.154.0.0/16,Telegram-Calls,no-resolve
 
 # --------------------------------------
