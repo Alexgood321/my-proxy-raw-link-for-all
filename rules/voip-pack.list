@@ -11,8 +11,6 @@ IP-CIDR,149.154.0.0/16,no-resolve
 DOMAIN-SUFFIX,x.ai
 DOMAIN-KEYWORD,grok
 DOMAIN-SUFFIX,premium.youtube.com
-DOMAIN-KEYWORD,kubikhd
-DOMAIN-KEYWORD,kubikvkube
 DOMAIN-SUFFIX,idc.md
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,labs.google
