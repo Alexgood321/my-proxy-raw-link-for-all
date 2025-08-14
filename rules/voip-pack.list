@@ -1,4 +1,4 @@
-# last_update=2025-08-14_22:18:38_UTC
+# last_update=2025-08-14_22:20:06_UTC
 # Consolidated from Test.conf + WhatsApp + Telegram (deduped)
 DOMAIN-SUFFIX,v.whatsapp.net
 IP-CIDR,31.13.72.0/24,no-resolve
