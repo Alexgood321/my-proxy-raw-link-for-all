@@ -8,6 +8,7 @@ IP-CIDR,185.60.218.51/32,no-resolve
 IP-CIDR,157.240.253.62/32,no-resolve
 IP-CIDR,91.108.0.0/16,no-resolve
 IP-CIDR,149.154.0.0/16,no-resolve
+DOMAIN-SUFFIX,speedtest
 DOMAIN-SUFFIX,x.ai
 DOMAIN-KEYWORD,grok
 DOMAIN-SUFFIX,premium.youtube.com
