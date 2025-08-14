@@ -1,0 +1,9 @@
+Shadowrocket VoIP Config
+
+1. В Shadowrocket → Config → Add Configuration → Download
+2. Вставь ссылку:
+https://raw.githubusercontent.com/Alexgood321/my-proxy-raw-link-for-all/main/profiles/remote.conf
+3. Done → Активируй профиль.
+4. В группе Main выбери свой прокси (не DIRECT).
+5. Включи Auto Refresh (12 ч).
+6. Проверить: в Rules домены из voip-pack.list должны идти через Main.
