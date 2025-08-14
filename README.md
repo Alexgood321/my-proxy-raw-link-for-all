@@ -1,4 +1,4 @@
-# {{REPO_NAME}}
+# my-proxy-raw-link-for-all
 
 Оптимизированные профили Shadowrocket (минимальный/баланс/строгий) с отдельным RULE-SET для VoIP.
 **Импорт:** Shadowrocket → Config → Add Configuration → Download → вставьте `{{RAW_BASE}}/profiles/{{PROFILE_NAME}}.conf` → Enable Auto Refresh.
