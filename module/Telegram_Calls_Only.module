@@ -1,0 +1,18 @@
+#!name=Telegram Calls – CallsOnly
+#!desc=Проксирование только звонков Telegram. Не затрагивает текст/медиа. Работает при отключённом P2P (Настройки → Приватность → Звонки → Peer-to-Peer → Никогда).
+
+[Proxy Group]
+# В Shadowrocket в UI выбери в этой группе активный прокси перед звонком.
+Telegram-Calls = select, MyServer, DIRECT
+
+[Rule]
+# -----------------------------------
+# Подтверждённые IP-блоки серверов Telegram для звонков
+# -----------------------------------
+IP-CIDR,91.108.0.0/16,Telegram-Calls,no-resolve
+IP-CIDR,149.154.0.0/16,Telegram-Calls,no-resolve
+
+# --------------------------------------
+# Сюда можно добавлять новые IP по мере захвата
+# --------------------------------------
+# IP-CIDR,A.B.C.D/32,Telegram-Calls,no-resolve

@@ -1,0 +1,27 @@
+#!name=WhatsApp Calls & Video IP CIDR ONLY
+#!desc=Маршрутизация звонков и видеосвязи WhatsApp через отдельную группу WhatsApp-Calls
+
+[Proxy Group]
+WhatsApp-Calls = select, PROXY, DIRECT
+
+[Rule]
+IP-CIDR,31.13.24.0/21,WhatsApp-Calls,no-resolve
+IP-CIDR,31.13.64.0/18,WhatsApp-Calls,no-resolve
+IP-CIDR,45.64.40.0/22,WhatsApp-Calls,no-resolve
+IP-CIDR,66.220.144.0/20,WhatsApp-Calls,no-resolve
+IP-CIDR,69.171.224.0/19,WhatsApp-Calls,no-resolve
+IP-CIDR,74.119.76.0/22,WhatsApp-Calls,no-resolve
+IP-CIDR,103.4.96.0/22,WhatsApp-Calls,no-resolve
+IP-CIDR,129.134.0.0/17,WhatsApp-Calls,no-resolve
+IP-CIDR,157.240.0.0/16,WhatsApp-Calls,no-resolve
+IP-CIDR,173.252.64.0/18,WhatsApp-Calls,no-resolve
+IP-CIDR,179.60.192.0/22,WhatsApp-Calls,no-resolve
+IP-CIDR,185.60.216.0/22,WhatsApp-Calls,no-resolve
+IP-CIDR,199.201.64.0/22,WhatsApp-Calls,no-resolve
+IP-CIDR,204.15.20.0/22,WhatsApp-Calls,no-resolve
+# Fallback TCP/443 ranges
+IP-CIDR,129.134.128.0/18,WhatsApp-Calls,no-resolve
+IP-CIDR,157.240.192.0/18,WhatsApp-Calls,no-resolve
+IP-CIDR,173.252.96.0/19,WhatsApp-Calls,no-resolve
+IP-CIDR,185.60.220.0/22,WhatsApp-Calls,no-resolve
+IP-CIDR,204.15.24.0/22,WhatsApp-Calls,no-resolve

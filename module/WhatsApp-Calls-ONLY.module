@@ -1,0 +1,34 @@
+#!name=WhatsApp Calls – CallsOnly
+#!desc=Проксирование только звонков WhatsApp. Минимальные домены и IP из реальных захватов. Не затрагивает текст/медиа.
+
+[Proxy Group]
+# В Shadowrocket в UI выбери в этой группе активный прокси перед звонком.
+WhatsApp-Calls = select, MyServer, DIRECT
+
+[Rule]
+# -----------------------------
+# Домены для VoIP (сигнализация)
+# -----------------------------
+DOMAIN-SUFFIX,v.whatsapp.net,WhatsApp-Calls
+# При необходимости можно включить и эти:
+# DOMAIN-SUFFIX,pps.whatsapp.net,WhatsApp-Calls
+# DOMAIN-SUFFIX,voip.whatsapp.net,WhatsApp-Calls
+
+# -----------------------------------
+# Подтверждённые IP-блоки из звонков
+# -----------------------------------
+IP-CIDR,31.13.72.0/24,WhatsApp-Calls,no-resolve
+IP-CIDR,157.240.200.0/24,WhatsApp-Calls,no-resolve
+IP-CIDR,157.240.205.0/24,WhatsApp-Calls,no-resolve
+
+# --------------------------------
+# Точечные адреса узлов WhatsApp
+# --------------------------------
+IP-CIDR,31.13.84.48/32,WhatsApp-Calls,no-resolve
+IP-CIDR,185.60.218.51/32,WhatsApp-Calls,no-resolve
+IP-CIDR,157.240.253.62/32,WhatsApp-Calls,no-resolve
+
+# --------------------------------------
+# Сюда добавляй новые IP по мере захвата
+# --------------------------------------
+# IP-CIDR,A.B.C.D/32,WhatsApp-Calls,no-resolve
