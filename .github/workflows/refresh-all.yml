@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update timestamp in all module/list files
+      - name: Update timestamp in all files (except .github/)
         shell: bash
         run: |
           set -euo pipefail
@@ -23,13 +23,11 @@ jobs:
           ts="$(date -u +"%Y-%m-%d_%H:%M:%S_UTC")"
           changed=0
 
-          # Список кандидатов: типичные текстовые конфиги + всё в rules/ + файл gg без расширения
-          mapfile -t files < <(git ls-files \
-            | grep -E '(\.(conf|list|module|yaml|yml|txt|ini|cnf)$)|(^rules/)|(^gg$)' \
-            | grep -Ev '^\.github/')
+          # Находит все файлы, кроме тех, что в .github/
+          mapfile -t files < <(git ls-files | grep -Ev '^\.github/')
 
           for f in "${files[@]}"; do
-            # Пропускаем бинарные и большие файлы (>2MB), на всякий
+            # Пропускаем бинарные и большие файлы (>2MB)
             if [ ! -s "$f" ] || [ $(stat -c%s "$f") -gt 2000000 ]; then
               continue
             fi
@@ -37,7 +35,7 @@ jobs:
               continue
             fi
 
-            # Комментарий в начале файла безопасен для YAML, list, module и др.
+            # Обновляем timestamp-комментарий в начале файла
             if grep -qE '^(#\s*)?last_update=' "$f"; then
               sed -i '1s/^\(#\s*\)\?last_update=.*/# last_update='"$ts"'/' "$f"
             else
