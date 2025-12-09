@@ -1,4 +1,4 @@
-# last_update=2025-12-09_09:47:31_UTC
+# last_update=2025-12-09_10:00:05_UTC
 #!name=WhatsApp ALL DOMAIN ADN IP CIDR
 #!desc=Маршрутизация звонков/видео WhatsApp. Включает PROCESS-NAME/USER-AGENT для TCP/443 fallback, IPv6 и доменные правила.
 
